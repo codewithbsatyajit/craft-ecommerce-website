@@ -67,5 +67,3 @@ For any questions or feedback, feel free to reach out:
 - **YouTube:** [coder-bsatyajit](https://www.youtube.com/@coder-bsatyajit)
 
 ```
-
-Make sure to replace `https://example.com` with the actual URL of your website demo. If you need further adjustments, just let me know!
