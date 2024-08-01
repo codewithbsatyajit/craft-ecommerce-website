@@ -1,0 +1,696 @@
+/* General reset and common styles */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	border: none;
+	outline: none;
+	font-family: "Jost", sans-serif;
+}
+
+/* Root variables for consistent theming */
+:root {
+	--bg-color: #ffffff;
+	--text-color: #000000;
+	--main-color: #cf0018;
+	--second-color: #42415065;
+	--other-color: #f4ddd6;
+	--second-bg-color: #f5f5f5;
+
+	--h1-font: 5rem;
+	--h2-font: 4rem;
+	--p-font: 1.1rem;
+}
+
+/* Body styling */
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+/* Header styling */
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	padding: 35px 12%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	transition: all .5s ease;
+}
+
+/* Logo styling */
+.logo {
+	font-size: 35px;
+	font-weight: 700;
+	color: var(--text-color);
+}
+
+/* Navigation list styling */
+.navlist {
+	display: flex;
+}
+
+/* Navigation link styling */
+.navlist a {
+	font-size: var(--p-font);
+	font-weight: 500;
+	margin: 0 25px;
+	color: var(--text-color);
+}
+
+/* Corrected hover state for navigation links */
+.navlist a:hover {
+	color: var(--main-color);
+	border-bottom: 3px solid var(--main-color);
+}
+
+/* Navigation right-side icons styling */
+.nav-right {
+	display: flex;
+	align-items: center;
+}
+
+/* Icons inside nav-right styling */
+.nav-right i {
+	font-size: 25px;
+	color: var(--text-color);
+	margin: 0 10px;
+	transition: all 0.4s ease;
+}
+
+/* Hover effect for icons */
+.nav-right i:hover {
+	color: var(--main-color);
+}
+
+/* Menu icon styling for responsive design */
+#menu-icon {
+	font-size: 32px;
+	cursor: pointer;
+	z-index: 10001;
+	margin-left: 15px;
+	display: none;
+}
+
+/* Section styling */
+section {
+	padding: 70px 12% 80px;
+}
+
+/* Home section styling */
+.home {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: var(--second-bg-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+/* Home text styling */
+.home-text h1 {
+	margin: 18px 0;
+	font-size: var(--h1-font);
+	font-weight: 800;
+	line-height: 1.3;
+	text-transform: uppercase;
+}
+
+/* Home text subtitle styling */
+.home-text h5 {
+	font-size: 22px;
+	font-weight: 500;
+	color: var(--main-color);
+}
+
+/* Home text paragraph styling */
+.home-text p {
+	color: var(--text-color);
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+
+/* Home image styling */
+.home-img img {
+	width: 100%;
+	height: auto;
+}
+
+/* Button styling */
+.btn {
+	display: inline-block;
+	padding: 11.5px 30px;
+	background: var(--text-color);
+	color: var(--bg-color);
+	border-radius: 30px;
+	font-size: var(--p-font);
+	transition: all .5s ease;
+}
+
+/* Icon inside button styling */
+.btn i {
+	margin-right: 7px;
+}
+
+/* Button hover effect */
+.btn:hover {
+	background: var(--main-color);
+}
+
+/* Sticky header styling */
+header.sticky {
+	background: var(--bg-color);
+	padding: 13px 12%;
+	box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+/* Crafts content grid layout */
+.crafts-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+	gap: 1.7rem;
+	text-align: center;
+}
+
+/* Crafts section padding */
+.crafts {
+	padding: 90px 12% 20px;
+}
+
+/* Crafts box styling */
+.crafts-box img {
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+
+/* Crafts box subtitle styling */
+.crafts-box h6 {
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--main-color);
+}
+
+/* Crafts box title styling */
+.crafts-box h3 {
+	margin: 8px 0px;
+	font-size: 26px;
+	font-weight: 700;
+}
+
+/* Crafts button styling */
+.crafts-btn {
+	display: inline-block;
+	font-size: var(--p-font);
+	color: var(--text-color);
+	border-bottom: 1px solid var(--text-color);
+	transition: all .5s ease;
+	bottom: 80px;
+	border-radius: 10px;
+	left: 0;
+	right: 0;
+	padding: 13px;
+	background: rgba(0, 0, 0, 0.9);
+	color: var(--bg-color);
+	transition: all .5s ease;
+	opacity: 1;
+	cursor: pointer;
+}
+
+/* Crafts button hover effect */
+.crafts-btn:hover {
+	background: var(--main-color);
+}
+
+/* Crafts box hover effect */
+.crafts-box {
+	transition: all .5s ease;
+}
+
+.crafts-box:hover {
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+/* Centered content styling */
+.center-in {
+	text-align: center;
+}
+
+.center-in h2 {
+	font-size: var(--h2-font);
+	margin: 10px 0;
+}
+
+.center-in p {
+	font-size: var(--p-font);
+	color: var(--text-color);
+}
+
+/* New products content grid layout */
+.new-products-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: center;
+	gap: 1.7rem;
+	margin-top: 5rem;
+}
+
+/* Image row overflow styling */
+.row-img {
+	overflow: hidden;
+}
+
+/* Image inside row styling */
+.row-img img {
+	display: block;
+	width: 100%;
+	transition: transform 0.6s;
+	cursor: pointer;
+}
+
+/* Image hover effect */
+.row-img img:hover {
+	transform: scale(1.1);
+}
+
+/* Row styling */
+.row {
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* Row title styling */
+.row h3 {
+	margin-top: 15px;
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+/* Row subtitle styling */
+.row h5 {
+	font-size: 17px;
+	font-weight: 500;
+	color: var(--text-color);
+}
+
+/* Row button styling */
+.row .r-btnn {
+	position: absolute;
+	bottom: 80px;
+	border-radius: 10px;
+	left: 0;
+	right: 0;
+	padding: 13px;
+	background: rgba(0, 0, 0, 0.9);
+	color: var(--bg-color);
+	transition: all .5s ease;
+	opacity: 1;
+	cursor: pointer;
+}
+
+/* Row button hover effect */
+.row .r-btnn:hover {
+	background: var(--main-color);
+}
+
+/* Call to action content styling */
+.cta-content {
+	padding: 120px 100px;
+	background: url(img/cta.jpg);
+	background-size: cover;
+	border-radius: 10px;
+	background-position: center;
+}
+
+/* Call to action heading styling */
+.cta-content h4 {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+/* Call to action paragraph styling */
+.cta-content p {
+	width: 100%;
+	max-width: 600px;
+	font-size: var(--p-font);
+	line-height: 32px;
+	margin: 10px 0;
+}
+
+/* Search form styling */
+.c-search form {
+	display: grid;
+	grid-template-columns: 1fr 0.4fr;
+	gap: 1rem;
+}
+
+/* Search input styling */
+.c-search form input:first-child {
+	border-radius: 30px;
+	display: inline-block;
+	width: 100%;
+	font-size: 17px;
+	padding: 15px;
+}
+
+/* Search button styling */
+.c-search form input:last-child {
+	width: 100%;
+	max-width: 180px;
+	display: inline-block;
+	padding: 16px 30px;
+	background: var(--main-color);
+	color: var(--bg-color);
+	font-size: var(--p-font);
+	cursor: pointer;
+}
+
+/* Trending products content grid layout */
+.trending-products {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: center;
+	gap: 1.7rem;
+	margin-top: 5rem;
+	text-align: center;
+}
+
+/* Box styling */
+.box img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+	border-radius: 10px;
+}
+
+/* Box heading styling */
+.box h5 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+/* Box subtitle styling */
+.box h6 {
+	font-size: 17px;
+	font-weight: 500;
+	color: var(--text-color);
+}
+
+/* Box transition effect */
+.box {
+	transition: all .5s ease;
+}
+
+.box:hover {
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+/* Blog content grid layout */
+.blog-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: center;
+	gap: 1.7rem;
+	margin-top: 5rem;
+}
+
+/* Blog image styling */
+.blog-img {
+	overflow: hidden;
+}
+
+/* Blog image inside row styling */
+.blog-img img {
+	display: block;
+	width: 100%;
+	transition: 0.6s ease;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+/* Blog image hover effect */
+.blog-img img:hover {
+	transform: scale(1.1);
+}
+
+/* Blog box subtitle styling */
+.blog-box h6 {
+	margin-top: 15px;
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--text-color);
+	margin-bottom: 10px;
+}
+
+/* Blog box heading styling */
+.blog-box h3 {
+	font-size: 20px;
+	font-weight: 700;
+	transition: all .4s;
+}
+
+/* Blog box heading hover effect */
+.blog-box:hover h3 {
+	color: var(--main-color);
+}
+
+/* Footer styling */
+.footer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: center;
+	gap: 2rem;
+}
+
+/* Footer box styling */
+.footer-box {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Footer box heading styling */
+.footer-box h3 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+/* Footer box paragraph styling */
+.footer-box p {
+	color: var(--text-color);
+	font-size: var(--p-font);
+	line-height: 32px;
+	margin-bottom: 40px;
+}
+
+/* Footer box icons styling */
+.footer-box .icons a {
+	flex-direction: column;
+	display: inline-block;
+	font-size: 22px;
+	margin-right: 12px;
+	color: var(--second-color);
+	transition: all .6s ease-in;
+}
+
+/* Footer box icon hover effect */
+.footer-box .icons a:hover {
+	transform: scale(1.1) translateY(-10px);
+	color: var(--main-color);
+	cursor: pointer;
+}
+
+/* Footer box link styling */
+.footer-box a {
+	font-size: 17px;
+	color: var(--text-color);
+	margin-bottom: 0.8rem;
+	transition: all .50s ease;
+}
+
+/* Footer box link hover effect */
+.footer-box a:hover {
+	transform: translateX(10px);
+	color: blueviolet;
+}
+
+/* Copyright section styling */
+.copyright {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 20px 12% 20px;
+}
+
+/* End text styling */
+.end-text p {
+	font-size: var(--p-font);
+	color: var(--text-color);
+}
+
+/* End image styling */
+.end-img img {
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+
+/* End image hover effect */
+.end-img img:hover {
+	transform: scale(1.1);
+}
+
+/* Top button styling */
+.top {
+	position: fixed;
+	color: var(--bg-color);
+	background: var(--main-color);
+	padding: 12px;
+	border-radius: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1750px) {
+	header {
+		padding: 25px 7%;
+	}
+
+	header.sticky {
+		padding: 10px 7%;
+	}
+
+	section {
+		padding: 60px 7% 60px;
+	}
+
+	.crafts {
+		padding: 60px 7% 20px;
+	}
+
+	.copyright {
+		padding: 60px 7% 20px;
+	}
+}
+
+@media (max-width: 1400px) {
+	header {
+		padding: 22px 5%;
+	}
+
+	header.sticky {
+		padding: 10px 5%;
+	}
+
+	section {
+		padding: 60px 5% 60px;
+	}
+
+	.crafts {
+		padding: 60px 5% 20px;
+	}
+
+	.copyright {
+		padding: 60px 5% 20px;
+	}
+
+	:root {
+		--h1-font: 4.2rem;
+		--h2-font: 3.2rem;
+		--p-font: 1rem;
+	}
+}
+
+@media(max-width: 1240px) {
+	.home {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		gap: 2rem;
+		height: auto;
+	}
+
+	.home-text {
+		padding-top: 60px;
+		margin-bottom: 40px;
+	}
+}
+
+@media(max-width: 1240px) {
+	#menu-icon {
+		display: block;
+	}
+
+	.navlist {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		padding: 40px 60px;
+		top: 0;
+		bottom: 0;
+		left: 100%;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		background: var(--bg-color);
+		transition: all .50s ease;
+	}
+
+	.navlist a {
+		display: block;
+		color: #979797;
+		padding: 0;
+		margin: 0px 0px 40px 0px;
+		font-size: 2.2rem;
+		font-weight: 400;
+	}
+
+	.navlist a:hover {
+		border-bottom: none;
+		cursor: pointer;
+	}
+
+	.navlist.open {
+		left: 0;
+	}
+}
+
+@media(max-width: 700px) {
+	.home {
+		gap: 0;
+	}
+
+	:root {
+		--h1-font: 3rem;
+		--h2-font: 2rem;
+	}
+
+	.cta-content {
+		padding: 40px 30px;
+	}
+}
+
+@media(max-width: 450px) {
+	:root {
+		--h1-font: 2.4rem;
+		--h2-font: 1.8rem;
+	}
+}
