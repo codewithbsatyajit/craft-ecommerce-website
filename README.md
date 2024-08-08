@@ -1,8 +1,10 @@
 # Craft Ecommerce Website
 
+![Craft Ecommerce Website](path/to/preview.mp4)
+
 ## Overview
 
-This repository contains a Craft Ecommerce Website, featuring a clean and modern design optimized for a seamless shopping experience. The website is built using HTML, CSS, and JavaScript, providing a responsive and interactive interface for users.
+This repository contains the **Craft Ecommerce Website**, featuring a clean and modern design optimized for a seamless shopping experience. The website is built using HTML, CSS, and JavaScript, providing a responsive and interactive interface for users.
 
 ## Features
 
@@ -11,14 +13,12 @@ This repository contains a Craft Ecommerce Website, featuring a clean and modern
 - **Dynamic Product Listings:** Products are dynamically loaded into the page.
 - **Scroll-to-Top Button:** Appears when users scroll down the page and smoothly scrolls back to the top.
 - **Responsive Navigation Menu:** Includes a toggle for mobile devices.
-- **Form Validation:** Ensures users enter an email address before submitting.
+- **Form Validation:** Ensures users enter a valid email address before submitting.
 
 ## Links
 
-- **GitHub Repository:** [craft-ecommerce-website](https://github.com/codewithbsatyajit/craft-ecommerce-website)
-- **Website Demo:** [Craft Ecommerce Website](Here is your link:
-
-https://t.me/MdFileStoreBot?start=BQADAQAD8wYAAhXgWEXbnVVNjIG0DBYE) <!-- Replace with your actual demo URL -->
+- **GitHub Repository:** [Craft Ecommerce Website](https://github.com/codewithbsatyajit/craft-ecommerce-website)
+- **Website Demo:** [Craft Ecommerce Website Demo](https://codewithbsatyajit.github.io/craft-ecommerce-website/)
 
 ## Installation
 
@@ -36,10 +36,10 @@ https://t.me/MdFileStoreBot?start=BQADAQAD8wYAAhXgWEXbnVVNjIG0DBYE) <!-- Replace
 
 ## Usage
 
-1. **Sticky Header:** The header will stick to the top of the viewport once you scroll past a certain point.
-2. **Navigation Menu:** Click the menu icon to toggle the navigation menu on mobile devices.
-3. **Scroll-to-Top Button:** Click the button at the bottom right to return to the top of the page.
-4. **Product Listings:** View and interact with dynamically loaded product listings.
+- **Sticky Header:** The header sticks to the top of the viewport once you scroll past a certain point.
+- **Navigation Menu:** Click the menu icon to toggle the navigation menu on mobile devices.
+- **Scroll-to-Top Button:** Click the button at the bottom right to return to the top of the page.
+- **Product Listings:** View and interact with dynamically loaded product listings.
 
 ## Development
 
@@ -59,11 +59,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any questions or feedback, feel free to reach out:
 
-- **Email:** satyajitkk3032@gmail.com
+- **Email:** [satyajitkk3032@gmail.com](mailto:satyajitkk3032@gmail.com)
 - **Telegram Channel:** [codewithbsatyajit](https://web.telegram.org/k/#@codewithbsatyajit)
 - **GitHub:** [codewithbsatyajit](https://github.com/codewithbsatyajit)
 - **Instagram:** [@bsatyajit_](https://www.instagram.com/bsatyajit_/)
 - **Twitter:** [@bsatyajit_](https://x.com/bsatyajit_)
 - **YouTube:** [coder-bsatyajit](https://www.youtube.com/@coder-bsatyajit)
-
 ```
