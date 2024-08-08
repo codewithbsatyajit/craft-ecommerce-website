@@ -18,7 +18,7 @@ This repository contains the **Craft Ecommerce Website**, featuring a clean and 
 ## Links
 
 - **GitHub Repository:** [Craft Ecommerce Website](https://github.com/codewithbsatyajit/craft-ecommerce-website)
-- **Website Demo:** [Craft Ecommerce Website Demo](https://codewithbsatyajit.github.io/craft-ecommerce-website/)
+- **Website Demo:** [Craft Ecommerce Website Demo](https://bit.ly/ArtoCrafted)
 
 ## Installation
 
